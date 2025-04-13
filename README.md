@@ -36,7 +36,7 @@ The program evaluates multiple configurations of hidden layers and neurons, capt
 
 ## How It Works
 
-1. Scales the input data using `StandardScaler` (important for gradient-based solvers).
+1. Imports MLPclassifier model from Scikit-learn 
 2. Loops through combinations of 1–10 hidden layers and 1–10 neurons per layer.
 3. Trains an `MLPClassifier` on the scaled XOR data.
 4. Stores the accuracy for each configuration.
